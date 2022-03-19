@@ -1,12 +1,23 @@
-import logo from './logo.svg';
+import React from 'react';
+import { Navbar } from './components';
+import { Footer } from './components';
+import { Welcome } from './components';
+import { Services } from './components';
+import { Transactions } from './components';
+
+
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+    <div className="min-h-screen">
+      <div className="gradient-bg-welcome">
+        <Navbar/>
+        <Welcome/>
+      </div>
+      <Services />
+      <Transactions />
+      <Footer/>
     </div>
   );
 }
